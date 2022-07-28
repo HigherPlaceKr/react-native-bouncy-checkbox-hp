@@ -1,50 +1,7 @@
 {
-  "_from": "git+https://github.com/HigherPlaceKr/react-native-bouncy-checkbox-hp.git",
-  "_id": "react-native-bouncy-checkbox@2.1.10",
-  "_inBundle": false,
-  "_integrity": "",
-  "_location": "/react-native-bouncy-checkbox",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "react-native-bouncy-checkbox@git+https://github.com/HigherPlaceKr/react-native-bouncy-checkbox-hp.git",
-    "name": "react-native-bouncy-checkbox",
-    "escapedName": "react-native-bouncy-checkbox",
-    "rawSpec": "git+https://github.com/HigherPlaceKr/react-native-bouncy-checkbox-hp.git",
-    "saveSpec": "git+https://github.com/HigherPlaceKr/react-native-bouncy-checkbox-hp.git",
-    "fetchSpec": "https://github.com/HigherPlaceKr/react-native-bouncy-checkbox-hp.git",
-    "gitCommittish": null
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "git+https://github.com/HigherPlaceKr/react-native-bouncy-checkbox-hp.git#6748d32a5cde7ec4e59d38fc9b9f7f4d3113952e",
-  "_spec": "react-native-bouncy-checkbox@git+https://github.com/HigherPlaceKr/react-native-bouncy-checkbox-hp.git",
-  "_where": "/Users/dlwns9141/Desktop/StayG",
-  "author": {
-    "name": "Kuray",
-    "email": "kurayogun@gmail.com",
-    "url": "FreakyCoder"
-  },
-  "bugs": {
-    "url": "https://github.com/WrathChaos/react-native-bouncy-checkbox/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
+  "name": "react-native-bouncy-checkbox",
+  "version": "2.1.10",
   "description": "Fully customizable animated bouncy checkbox for React Native",
-  "devDependencies": {
-    "@react-native-community/eslint-config": "^3.0.0",
-    "@types/react": "^18.0.0",
-    "@types/react-native": "^0.67.1",
-    "eslint": "^8.0.0",
-    "eslint-config-airbnb": "^19.0.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.0",
-    "prettier": "^2.0.5",
-    "react-native-typescript-transformer": "^1.2.13",
-    "typescript": "^4.0.2"
-  },
-  "homepage": "https://www.freakycoder.com",
   "keywords": [
     "bouncy",
     "checkbox",
@@ -63,23 +20,33 @@
     "ui-lib",
     "rn"
   ],
-  "license": "MIT",
+  "homepage": "https://www.freakycoder.com",
+  "bugs": "https://github.com/WrathChaos/react-native-bouncy-checkbox/issues",
   "main": "./build/dist/BouncyCheckbox.js",
-  "name": "react-native-bouncy-checkbox",
-  "peerDependencies": {
-    "react": ">= 16.x.x",
-    "react-native": ">= 0.55.x"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HigherPlaceKr/react-native-bouncy-checkbox-hp.git"
-  },
+  "repository": "git@github.com:WrathChaos/react-native-bouncy-checkbox.git",
+  "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "build": "cd lib && tsc && cp ../package.json ../build/dist/ && Echo Build completed!",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "postversion": "git push && git push --tags",
-    "version": "npm run format && git add -A src"
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
-  "version": "2.1.10"
+  "peerDependencies": {
+    "react": ">= 16.x.x",
+    "react-native": ">= 0.55.x"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-native": "^0.67.1",
+    "react-native-typescript-transformer": "^1.2.13",
+    "typescript": "^4.0.2",
+    "@react-native-community/eslint-config": "^3.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb": "^19.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.0",
+    "prettier": "^2.0.5"
+  }
 }
